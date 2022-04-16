@@ -5,14 +5,15 @@ import MovieCard from "./MovieCard";
 import './App.css';
 import SearchIcon from './search.svg';
 
-useEffect(() => {
-    document.title = "Movie World";  
-  }, []);
+
 const API_URL ='http://www.omdbapi.com?apikey=7bfb0834';
 const App=()=> {
 
     const [searchTerm, setSearchTerm] = useState("");
     const [movies, setMovies] = useState([]);
+    useEffect(() => {
+    document.title = "Movie World";  
+  }, []);
 
     useEffect( ()=> {
         searchMovies('All');
