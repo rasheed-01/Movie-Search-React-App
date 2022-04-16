@@ -5,6 +5,9 @@ import MovieCard from "./MovieCard";
 import './App.css';
 import SearchIcon from './search.svg';
 
+useEffect(() => {
+    document.title = "Movie World";  
+  }, []);
 const API_URL ='http://www.omdbapi.com?apikey=7bfb0834';
 const App=()=> {
 
@@ -23,6 +26,7 @@ const App=()=> {
     };
 
     return(
+        
         <div className="app">
         <h1> MovieLand</h1>
 
