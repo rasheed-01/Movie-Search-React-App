@@ -32,7 +32,7 @@ const App=()=> {
         <h1> Movie World</h1>
 
             <div className="search">
-                <input placeholder ="Shah Zaid is A Fucking Asshole Pervert Bulldog" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
+                <input placeholder ="Search For Movies" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
                 <img
                     src={SearchIcon}
                     alt="search"
